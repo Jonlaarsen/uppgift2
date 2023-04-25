@@ -80,7 +80,9 @@ body{
     width:100%;
     
   }
-
+  .reg-btn input:hover{
+    background: linear-gradient(135deg, #71b7e68e, #9c59b684);
+  }
   .header-container{
     display:flex;
     position:absolute;
