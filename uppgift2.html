@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="uppgift2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+
+</header>
+<body>
+    <div class="container">
+      <div class="title"> Registration Form</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <label for="name" class="details">Full Name</label>
+            <input name="name" type="text" placeholder="Enter full name" reguired>
+          </div>
+          <div class="input-box">
+            <label for="age-input" class="details">Birth Date</label>
+            <input type="date" id="start" name="age-input" max="2023-01-01" value="2018-05" reguired>
+          </div>
+          <div class="input-box">
+            <label for="email" class="details">Email</label>
+            <input name="email" type="email" placeholder="Enter Email" reguired>
+          </div>
+          <div class="input-box">
+            <label for="phonenumber" class="details">Phone Number</label>
+            <input name="phonenumber" type="tel" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" reguired>
+          </div>
+          <div class="input-box">
+            <label for="username" class="details">Username</label>
+            <input name="username" type="text" placeholder="Enter username" reguired>
+          </div>
+          <div class="input-box">
+            <label for="password" class="details">Password</label>
+            <input name="password" type="password" placeholder="Enter password" reguired>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </div>
+      </form>  
+    </div>
+</body>
+</html>
