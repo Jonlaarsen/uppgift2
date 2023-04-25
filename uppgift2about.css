@@ -1,0 +1,137 @@
+body{
+    display:flex;
+    height: 100vh;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)
+  }
+.container{
+    max-width: 45rem;
+    width: 100%;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 1.4rem;
+    max-height: 32rem;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+    box-shadow:12px 12px 1px 1px rgba(0, 0, 255, .2);
+    
+  }
+  .container h2{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .container h3{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+  .container p{
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    border: solid 1px #a5a5a5;
+    padding: 2px;
+    border-radius: 20px;
+  }
+
+.header-container{
+    display:flex;
+    position:absolute;
+    max-height: 6rem;
+    height: 90%;
+    width:100%;
+    align-self: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+  } 
+  .register-btn {
+    width:100%;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: #fff;
+    border:none;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding:1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    text-align: center; 
+    width:100%;
+    
+  }
+
+  .title{
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    color: #fff;
+    
+  }
+  
+  .logo{
+    top: 2rem;
+    left: 2rem;
+    border-radius: 4rem;
+    position: absolute; 
+    height: 3rem;
+    animation: mymove 10s infinite;
+  }
+  @keyframes mymove {
+    100% {transform: rotate(720deg);}
+  }
+
+  .footer-container{
+    display:flex;
+    position:absolute;
+    max-height: 6rem;
+    height: 90%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    left:0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    gap: 3rem;
+ }
+  #instagram{
+    position:aboslute;
+    max-height: 3rem;
+}
+  #facebook{
+    position: aboslute;
+    max-height: 3rem;
+  }
+  #twitter{
+   position:aboslute;
+   max-height: 3rem;
+  }
+  @media (max-width: 450px) {
+    .container {
+        display: flex;
+    max-height: 60rem;
+    height: 100%;
+    max-width: 25rem;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+  }
+  .title{
+  padding-top: 3rem;
+  text-transform: Uppercase;
+  text-decoration: underline;
+  }
+  .register-btn{
+    max-width: 25rem;
+    width: 100%;
+  }
+}
