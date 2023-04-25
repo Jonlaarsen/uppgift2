@@ -18,6 +18,7 @@ body{
     box-shadow:12px 12px 1px 1px rgba(0, 0, 255, .2);
     
   }
+  
   .user-details{
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +101,13 @@ body{
     font-size: 1.5rem;
     font-weight: 1000;
     
+  }
+  .header-title{
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    color: #fff;
   }
   
   .logo{
