@@ -80,3 +80,131 @@ body{
     font-weight: 500;
     text-align: center;
   }
+
+  .header-container{
+    display:flex;
+    position:absolute;
+    max-height: 6rem;
+    height: 90%;
+    width:100%;
+    align-self: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+  } 
+
+  .title{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    
+  }
+  
+  .logo{
+    top: 2rem;
+    left: 2rem;
+    border-radius: 4rem;
+    position: fixed; 
+    height: 3rem;
+    animation: mymove 10s infinite;
+  }
+
+  @keyframes mymove {
+    100% {transform: rotate(720deg);}
+  }
+
+  .wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg,#4158d0, #c850c0 );
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .wrapper{
+    clip-path: circle(75%);
+  }
+  .menu-btn{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  #active:checked ~ .menu-btn{
+    color: #fff;
+  }
+  #active:checked ~ .menu-btn i:before{
+    content: "BACK";
+  }
+  .wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+  .wrapper ul li{
+    margin: 15px 0;
+  }
+  .wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    gap: 2rem;
+    color: #fff;
+    position: relative;
+    line-height: 2rem;
+    transition: all 0.3s ease;
+  }
+  .wrapper ul li a:after{
+    position: absolute;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    width: 104%;
+    height: 110%;
+    transform: scaleY(0);
+    z-index: -1;
+  }
+  
+  input[type="checkbox"]{
+    display: none;
+  }
+
+  .footer-container{
+    display:flex;
+    position:absolute;
+    max-height: 6rem;
+    height: 90%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    left:0;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    gap: 3rem;
+      }
+      #instagram{
+        position:aboslute;
+        max-height: 3rem;
+      }
+      #facebook{
+        position:aboslute;
+        max-height: 3rem;
+      }
+      #twitter{
+        position:aboslute;
+        max-height: 3rem;
+      }
