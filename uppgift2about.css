@@ -124,23 +124,38 @@ body{
    position:aboslute;
    max-height: 3rem;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .container {
-        display: flex;
-    max-height: 60rem;
-    height: 100%;
+    display: flex;
+    min-height: 40rem;
     max-width: 25rem;
     flex-wrap:wrap;
-    flex-direction: row;
     justify-content: center;
     align-items: center;  
   }
   .title{
-  padding-top: 3rem;
+  font-size: 25px;  
   text-transform: Uppercase;
   }
-  .register-btn{
-    max-width: 25rem;
-    width: 100%;
+  .header-container{
+    background: none;
+  }
+  .footer-container{
+    background: none;
+  }
+  .extrainfo p{
+    padding: 10px 5px 10px 5px;
+  }
+  #twitter{
+    height: 30px;
+  }
+  #facebook{
+    height: 30px;
+  }
+  #instagram{
+    height: 30px;
+  }
+  .logo{
+    display: none;
   }
 }
