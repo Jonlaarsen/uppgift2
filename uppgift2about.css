@@ -114,17 +114,29 @@ body{
     bottom: 0;
  }
   #instagram{
-    
+    position:aboslute;
     max-height: 3rem;
 }
+  #instagram:hover{
+    animation: grow 10s;
+}
+  @keyframes grow {
+    100% {transform: scale(1.5);}
+}
   #facebook{
-    
+    position: aboslute;
     max-height: 3rem;
   }
+  #facebook:hover{
+    animation: grow 10s;
+}
   #twitter{
-   
+   position:aboslute;
    max-height: 3rem;
   }
+  #twitter:hover{
+    animation: grow 10s;
+}
   @media (max-width: 500px) {
     .container {
     display: flex;
